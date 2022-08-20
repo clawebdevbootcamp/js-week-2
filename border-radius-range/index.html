@@ -15,16 +15,19 @@
         <div
           class="card-body d-flex flex-column justify-content-center align-items-center"
         >
+          <!-- Our box -->
           <div class="box mb-3"></div>
+
+          <!-- Form Elements -->
           <form class="w-100">
             <label for="borderStyle">Border style</label>
             <select class="custom-select mb-2" id="borderStyle">
-              <option value="dotted" selected>Dotted</option>
+              <option value="dotted">Dotted</option>
               <option value="dashed">Dashed</option>
               <option value="solid">Solid</option>
               <option value="double">Double</option>
               <option value="groove">Groove</option>
-              <option value="ridge">Ridge</option>
+              <option value="ridge" selected>Ridge</option>
               <option value="inset">Inset</option>
               <option value="outset">Outset</option>
             </select>
@@ -36,12 +39,12 @@
                 class="custom-range mr-2"
                 min="0"
                 max="20"
-                value="0"
+                value="5"
               />
               <span class="form-text mt-0">0px</span>
             </div>
 
-            <label for="borderRadius">All corner</label>
+            <label for="borderRadius">Border Radius</label>
             <div class="d-flex flex-row">
               <input
                 type="range"
@@ -49,11 +52,12 @@
                 class="custom-range mr-2"
                 min="0"
                 max="50"
-                value="0"
+                value="15"
               />
               <span class="form-text mt-0">0%</span>
             </div>
           </form>
+
         </div>
         <div class="card-footer"></div>
       </div>
